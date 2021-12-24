@@ -1,0 +1,17 @@
+{
+  "arch": "tricore",
+  "atomic-cas": false,
+  "cpu": "tricore",
+  "data-layout": "e-m:e-p:32:32-i64:32-a:0:32-n32",
+  "eh-frame-header": false,
+  "emit-debug-gdb-scripts": false,
+  "executables": true,
+  "is-builtin": false,
+  "linker": "rust-lld",
+  "linker-flavor": "ld.lld",
+  "llvm-target": "tricore",
+  "max-atomic-width": 0,
+  "panic-strategy": "abort",
+  "relocation-model": "static",
+  "target-pointer-width": "32"
+}
