@@ -18,16 +18,7 @@ Idea:
 - Using bitcode to create elf objects for tricore based boards.
   - "llc main_no_core.bc --march=tricore"
   - or "llc main_no_core.ll --march=tricore"
-  - a simple test which already fails - FIXME
-~~~
-EmitInstruction not implemented
-UNREACHABLE executed at /work/include/llvm/CodeGen/AsmPrinter.h:500!
-PLEASE submit a bug report to https://bugs.llvm.org/ and include the crash backtrace.
-Stack dump:
-0.	Program arguments: llc main_no_core.bc --march=tricore
-1.	Running pass 'Function Pass Manager' on module 'main_no_core.bc'.
-2.	Running pass 'TriCore Assembly Printer' on function '@main'
-~~~
+  - creates Assmbler main_no_core.s file
 - Using cargo build for the whole build process
   - "cargo build -Z build-std=core"
 - Ultimate goal is to get some https://github.com/Infineon/AURIX_code_examples running
